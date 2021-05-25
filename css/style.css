@@ -136,14 +136,15 @@ p {
   margin: 5px;
   background-color: #dae1eb;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 30%;
 }
 .company-offers p {
-  padding: 30px 50px;
+  padding: 10px 50px;
 }
 .footer-box {
   display: flex;
-  background-color: #dde1e7;
+  background-color: #65768c;
+  color: white;
 }
 .footer-box > * {
   flex: 1;
@@ -169,13 +170,23 @@ p {
 footer ul {
   padding: 0px auto;
   line-height: 30px;
+  list-style-type: none;
 }
+
 footer ul li a {
   text-decoration: none;
+  color: #5ecb90;
+}
+footer ul li a:hover {
+  width: 10px;
+  color: white;
+  transition: 0.3s;
 }
 footer h2 {
   margin: 5px 25px;
+  color: white;
 }
+
 #cta-button-id {
   float: right;
   margin-right: 20px;
@@ -403,7 +414,7 @@ footer h2 {
 .favourite {
   text-align: center;
 }
-@media (max-width: 599px) {
+@media (max-width: 499px) {
   header {
     display: flex;
     text-align: center;
@@ -428,14 +439,14 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 95%;
+    top: 90%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
     width: 100%;
   }
   .icons li {
-    background-color: grey;
+    background-color: white;
     padding: 10px 20px;
   }
 
@@ -454,20 +465,20 @@ footer h2 {
     background-color: #f2f2f2;
     box-shadow: 2px 2px #81f8b8;
     font-size: 20px;
-
     padding: 20px;
   }
   .section-featured {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     row-gap: 30px;
+    column-gap: 10px;
     justify-items: center;
   }
 
   .featured-products {
     max-width: 150px;
     height: 255px;
-    margin: 0px;
+    margin: 10px 0px;
     border-radius: 10px 10px;
     box-shadow: 2px 2px #81f8b8;
   }
@@ -543,9 +554,6 @@ footer h2 {
   }
 
   .footer-p {
-    border-radius: 10px;
-    background-color: #f2f2f2;
-    box-shadow: 2px 2px 2px 2px #81f8b8;
     text-align: center;
   }
   footer ul {
