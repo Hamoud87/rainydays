@@ -428,7 +428,7 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 90%;
+    top: 95%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
@@ -466,7 +466,7 @@ footer h2 {
 
   .featured-products {
     max-width: 150px;
-    height: 250px;
+    height: 255px;
     margin: 0px;
     border-radius: 10px 10px;
     box-shadow: 2px 2px #81f8b8;
