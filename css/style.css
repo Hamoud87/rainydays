@@ -266,11 +266,17 @@ footer h2 {
   max-width: 100%;
 }
 .contact-decoration {
-  margin: 30px auto 420px;
+  margin: 30px auto;
   padding: 10px 50px;
-  box-shadow: 0px 2px 2px 2px #81f8b8;
+  box-shadow: 0px 1px 1px 1px #81f8b8;
+  border-radius: 5px;
+  text-align: center;
 }
 
+.contact-decoration input,
+.contact-decoration textarea {
+  margin: 10px auto;
+}
 .map-image {
   max-width: 300px;
 }
@@ -544,6 +550,8 @@ footer h2 {
   /* Contact us */
   .contact-style {
     display: block;
+    width: 90%;
+    margin: 0px auto;
   }
   .contact-decoration {
     margin: 20px auto;
