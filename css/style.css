@@ -90,9 +90,6 @@ h2 {
   background-color: #0b3a40;
   text-align: center;
 }
-.cta-sing-up {
-  margin: 40px 20px;
-}
 
 .section-featured,
 .section-men,
@@ -141,6 +138,7 @@ p {
 .company-offers p {
   padding: 10px 50px;
 }
+
 .footer-box {
   display: flex;
   background-color: #65768c;
@@ -152,7 +150,16 @@ p {
 .footer-box {
   padding: 10px 20px;
 }
+.signup-input {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: darkgrey;
+}
 
+.signup-input:hover {
+  background-color: lightgrey;
+}
 .paragraf {
   max-width: 1000px;
   position: absolute;
@@ -185,11 +192,6 @@ footer ul li a:hover {
 footer h2 {
   margin: 5px 25px;
   color: white;
-}
-
-#cta-button-id {
-  float: right;
-  margin-right: 20px;
 }
 
 /* Specific product Page */
@@ -302,7 +304,7 @@ footer h2 {
   display: flex;
 }
 .shoppingcart-elements div {
-  margin: 10px 20px 50px 10px;
+  margin: 10px 20px 0px 10px;
 }
 
 .remove-icon {
@@ -414,14 +416,22 @@ footer h2 {
 .favourite {
   text-align: center;
 }
-@media (max-width: 499px) {
-  header {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-  }
+@media (max-width: 890px) and (min-width: 600px) {
   nav {
     display: none;
+    position: fixed;
+    top: 25px;
+    right: 0%;
+    z-index: 1000;
+  }
+  nav li {
+    display: block;
+    width: 120%;
+  }
+  nav a {
+    display: block;
+    background-color: #f2f2f2;
+    font-size: 20px;
   }
   .hamburger-label {
     display: block;
@@ -439,13 +449,14 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 90%;
+    top: 95%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
     width: 100%;
   }
   .icons li {
+    width: 100%;
     background-color: white;
     padding: 10px 20px;
   }
@@ -468,6 +479,149 @@ footer h2 {
     padding: 20px;
   }
   .section-featured {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 10px;
+    justify-items: center;
+  }
+
+  .company-offers {
+    display: none;
+  }
+  footer {
+    margin-top: 10px;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+  }
+  /* specific-product */
+  .pro-display {
+    display: block;
+    margin: 20px auto;
+  }
+  /* shoppingcart */
+  .shoppingcart-style {
+    display: block;
+  }
+  .shoppingcart-sec-decoration {
+    max-width: 90%;
+    margin: 30px auto 0px auto;
+  }
+  .shoppingcart-shipment-elements {
+    margin-bottom: 10px;
+  }
+
+  /* Delivery-Payment */
+  .delivery {
+    display: block;
+  }
+  .delivery-section textarea {
+    width: 300px;
+  }
+  /* Purchase Success */
+  .purchase-section {
+    display: block;
+  }
+  /* Contact us */
+  .contact-style {
+    display: block;
+  }
+  .contact-decoration {
+    margin: 20px auto;
+  }
+
+  .map-image {
+    width: 250px;
+  }
+  .paragraf {
+    max-width: 1000px;
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    left: 150px;
+    font-size: 20px;
+  }
+
+  .footer-p {
+    text-align: center;
+  }
+  footer ul {
+    padding: 0px auto;
+    line-height: 30px;
+  }
+  footer h2 {
+    margin: 5px 25px;
+  }
+  #cta-button-id {
+    margin: auto;
+  }
+  .copyright {
+    margin: 0px 0px 20px 30px;
+  }
+}
+@media (max-width: 599px) {
+  header {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+  nav {
+    display: none;
+  }
+  .hamburger-label {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+  .hamburger-label:active {
+    color: #81f8b8;
+  }
+  #hamburger-menu {
+    display: none;
+  }
+
+  .icons {
+    border-radius: 30px;
+    position: fixed;
+    top: 95%;
+    right: 0%;
+    justify-content: center;
+    margin: 0px auto;
+    width: 100%;
+  }
+  .icons li {
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 25px;
+    width: 130%;
+    z-index: 1000;
+  }
+  nav li {
+    display: block;
+  }
+  nav a {
+    display: block;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px #81f8b8;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .section-featured,
+  .section-men,
+  .section-women,
+  .section-favorite {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     row-gap: 30px;
@@ -518,9 +672,21 @@ footer h2 {
   .shoppingcart-style {
     display: block;
   }
+  .shoppingcart-style h1 {
+    text-align: center;
+  }
   .shoppingcart-sec-decoration {
-    max-width: 100%;
-    margin: 30px auto 0px auto;
+    max-width: 90%;
+    margin: 20px auto 0px auto;
+  }
+  .shoppingcart-elements {
+    display: block;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .remove-icon {
+    padding: 0px;
   }
   /* Delivery-Payment */
   .delivery {
