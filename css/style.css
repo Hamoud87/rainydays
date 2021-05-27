@@ -205,23 +205,22 @@ footer h2 {
 }
 .product-image {
   width: 100%;
-  box-shadow: 0px 2px 2px 2px #81f8b8;
-  border-radius: 10px;
+  box-shadow: 0px 1px 1px 1px #81f8b8;
+  border-radius: 5px;
 }
 .pro-display_thumbnails {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
   margin-top: 10px;
-  box-shadow: 0px 2px #81f8b8;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .pro-display_details {
   margin: 0px 20px;
+
   text-align: center;
-  box-shadow: 0px 2px 2px 2px #81f8b8;
+  box-shadow: 0px 1px 1px 1px #81f8b8;
   border-radius: 10px;
 }
 .pro-display_info {
@@ -328,18 +327,20 @@ footer h2 {
   max-width: 400px;
   margin: 20px auto;
   padding: 10px;
-  box-shadow: 0px 2px 2px 2px #81f8b8;
+  box-shadow: 0px 1px 1px 1px #81f8b8;
   border-radius: 5px;
 }
 
 .delivery-form {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 300px;
   min-height: 25px;
   border: grey solid 1px;
-  border-radius: 5px;
+  border-radius: 30px;
   margin: 5px 0px;
 }
+
 .delivery-section textarea {
   border-radius: 10px;
 }
@@ -356,8 +357,8 @@ footer h2 {
 .delivery-section p {
   text-align: center;
   margin: 20px;
-  box-shadow: 0px 2px 2px 2px #81f8b8;
-  border-radius: 10px;
+
+  border-radius: 5px;
 }
 .payment-card-icons img {
   width: 40px;
@@ -378,7 +379,7 @@ footer h2 {
 
 .purchase-section {
   display: flex;
-  box-shadow: 0px 2px 2px 2px #81f8b8;
+  box-shadow: 0px 1px 1px 1px #81f8b8;
   padding: 10px;
 }
 .purchase-section a {
@@ -430,7 +431,7 @@ footer h2 {
   }
   nav a {
     display: block;
-    background-color: #f2f2f2;
+    background-color: #bfbfbf;
     font-size: 20px;
   }
   .hamburger-label {
@@ -457,7 +458,7 @@ footer h2 {
   }
   .icons li {
     width: 100%;
-    background-color: white;
+    background-color: #d9d9d9;
     padding: 10px 20px;
   }
 
@@ -473,7 +474,7 @@ footer h2 {
   }
   nav a {
     display: block;
-    background-color: #f2f2f2;
+    background-color: #d9d9d9;
     box-shadow: 2px 2px #81f8b8;
     font-size: 20px;
     padding: 20px;
@@ -490,14 +491,17 @@ footer h2 {
     display: none;
   }
   footer {
-    margin-top: 10px;
+    margin-top: 50px;
   }
   .footer-box {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
+
   /* specific-product */
   .pro-display {
+    width: 90%;
     display: block;
     margin: 20px auto;
   }
@@ -517,9 +521,22 @@ footer h2 {
   .delivery {
     display: block;
   }
+  .delivery-section {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0px 2px 2px 2px #81f8b8;
+    border-radius: 5px;
+  }
+  .delivery-form {
+    margin: 5px 20%;
+  }
+
   .delivery-section textarea {
     width: 300px;
+    margin: 10px 20%;
   }
+
   /* Purchase Success */
   .purchase-section {
     display: block;
@@ -597,7 +614,7 @@ footer h2 {
   }
   .icons li {
     width: 100%;
-    background-color: white;
+    background-color: #d9d9d9;
     padding: 10px 20px;
   }
 
@@ -613,7 +630,7 @@ footer h2 {
   }
   nav a {
     display: block;
-    background-color: #f2f2f2;
+    background-color: #d9d9d9;
     box-shadow: 2px 2px #81f8b8;
     font-size: 20px;
     padding: 20px;
@@ -659,6 +676,7 @@ footer h2 {
   .company-offers {
     display: none;
   }
+
   .footer-box {
     display: flex;
     flex-direction: column;
@@ -695,6 +713,7 @@ footer h2 {
   .delivery-section textarea {
     width: 300px;
   }
+
   /* Purchase Success */
   .purchase-section {
     display: block;
@@ -702,9 +721,16 @@ footer h2 {
   /* Contact us */
   .contact-style {
     display: block;
+
+    margin: 0px auto;
   }
   .contact-decoration {
-    margin: 20px auto;
+    margin: 20px 0px;
+  }
+  .contact-decoration textarea,
+  .contact-decoration input {
+    width: 250px;
+    margin: 0px auto;
   }
 
   .map-image {

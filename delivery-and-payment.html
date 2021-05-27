@@ -21,49 +21,45 @@
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
   </head>
-  
   <body>
     <header class="top-header">
-      <a href="index.html"
-        ><img
-          src="images/rainydays-logo.png"
-          class="rainydays_logo"
-          alt="rainydays logo image"
-      /></a>
-
-      <label class="hamburger-label"  for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <a href="index.html"><img src="images/rainydays-logo.png" class="rainydays_logo" alt="rainydays logo image" /></a>
+      <ul class="icons">
+        <li>
+          <i class="fas fa-2x fa-search"></i>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-2x fa-user"></i></a>
+        </li>
+        <li>
+          <a href="favorite-product.html"><i class="fas fa-2x fa-heart"></i></a>
+        </li>
+        <li>
+          <a href="shopping-cart.html"><i class="fas fa-2x fa-shopping-cart"></i> </a>
+        </li>
+      </ul>
+      <label class="hamburger-label" class="hamburger-label" for="hamburger-menu"><i class="fas fa-2x fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu" />
-
       <nav>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html"><span class="active">Home</span></a>
           </li>
           <li><a href="men.html">Men</a></li>
           <li><a href="women.html">Women</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact-us.html">Contact us</a></li>
-
-          <a href=""><img src="images/profile-icon.png" alt="" /></a>
-          <a href="favorite-product.html"> <img src="images/liked-icon.png" alt="" /></a>
-          <a href="shopping-cart.html">
-            <img src="images/shopping-bag-icon.png" alt=""
-          /></a>
         </ul>
       </nav>
     </header>
      <main class="delivery"> 
        <section class="delivery-section">
          <h1>Delivery Adress </h1>
-          <form  >
+          <form method="POST" >
    
-             <label for="name"  > Name</label>
+             <label for="name"  > Name /Last name</label>
           
              <input type="text" name="name" id="name" class="delivery-form" ></input>
-       
-                 <label for="lastname">Last Name</label>
-        
-                 <input type="lastname" name="lastname" id="lastname" class="delivery-form"></input>
            
                  <label for="land/region">Land / Region</label>
          
@@ -138,13 +134,11 @@
       </form>
           <div class=delivery-order>
              <p>Delivery</p>
-        <p>Free</p>
-        <p>Total sum (ink.25% mva.)</p>
-        <p>499kr</p>
-        <a href="purchase-success.html" class="cta-button cta-add-to-cart" >Send Order</a>
+             <p>Free</p>
+             <p>Total sum (ink.25% mva.)</p>
+             <p>499kr</p>
+            <a href="purchase-success.html" class="cta-button cta-add-to-cart" >Send Order</a>
           </div>
-      
-       
       </section>
   </main>
   <footer class="footer">
@@ -180,7 +174,7 @@
           <li>Org nr: 121212121</li>
         </ul>
       </div>
-      <div class="footer-p">
+      <div class="company-offers">
         <h2>Safe Purchase</h2>
         <ul>
           <li>Safe payment</li>
