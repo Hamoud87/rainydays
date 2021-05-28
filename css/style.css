@@ -46,7 +46,7 @@ nav a:hover,
   transition: 0.6s;
 }
 .active {
-  color: #707070;
+  color: #81f8b8;
 }
 
 #hamburger-menu,
@@ -91,6 +91,7 @@ h2 {
 .cta-add-to-cart {
   background-color: #0b3a40;
   text-align: center;
+  margin: 10px;
 }
 
 .section-featured,
@@ -514,7 +515,7 @@ footer h2 {
   .footer-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 
   /* specific-product */
@@ -626,7 +627,7 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 88%;
+    top: 91%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
@@ -635,7 +636,7 @@ footer h2 {
   .icons li {
     width: 100%;
     background-color: #e3edf7;
-    padding: 20px 20px 40px 20px;
+    padding: 10px 5px 40px 15px;
     display: flex;
     margin-bottom: 10px;
   }
@@ -713,7 +714,7 @@ footer h2 {
   .footer-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
   /* specific-product */
   .pro-display {
