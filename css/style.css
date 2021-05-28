@@ -458,7 +458,7 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 92%;
+    top: 90%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
@@ -467,7 +467,7 @@ footer h2 {
   .icons li {
     width: 100%;
     background-color: #e3edf7;
-    padding: 10px 20px;
+    padding: 20px 20px;
     display: flex;
   }
 
@@ -628,7 +628,7 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 93%;
+    top: 90%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
@@ -637,7 +637,7 @@ footer h2 {
   .icons li {
     width: 100%;
     background-color: #e3edf7;
-    padding: 5px 20px;
+    padding: 20px 20px;
     display: flex;
   }
   .icons a {
