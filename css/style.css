@@ -467,7 +467,7 @@ footer h2 {
   .icons li {
     width: 100%;
     background-color: #e3edf7;
-    padding: 20px 20px;
+    padding: 20px 20px 40px 20px;
     display: flex;
   }
 
@@ -510,13 +510,11 @@ footer h2 {
   .company-offers {
     display: none;
   }
-  footer {
-    margin-top: 50px;
-  }
+
   .footer-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
   }
 
   /* specific-product */
@@ -637,7 +635,7 @@ footer h2 {
   .icons li {
     width: 100%;
     background-color: #e3edf7;
-    padding: 20px 20px;
+    padding: 20px 20px 40px 20px;
     display: flex;
     margin-bottom: 10px;
   }
@@ -715,6 +713,7 @@ footer h2 {
   .footer-box {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
   }
   /* specific-product */
   .pro-display {
