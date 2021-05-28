@@ -19,9 +19,11 @@ header {
   right: 2%;
   margin: 10px 10px;
   list-style-type: none;
+  color: #0b3a40;
 }
+
 .icons a {
-  text-decoration: none;
+  border-radius: 50%;
   color: #0b3a40;
   padding: 15px 15px;
 }
@@ -456,7 +458,7 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 95%;
+    top: 92%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
@@ -464,8 +466,20 @@ footer h2 {
   }
   .icons li {
     width: 100%;
-    background-color: #d9d9d9;
+    background-color: #e3edf7;
     padding: 10px 20px;
+    display: flex;
+  }
+
+  .icons a {
+    background-color: #e3edf7;
+    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.15), -5px -5px 10px -1px rgba(255, 255, 255, 0.17);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #0b3a40;
+    padding: 15px 15px;
   }
 
   nav {
@@ -614,7 +628,7 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 95%;
+    top: 93%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
@@ -622,8 +636,19 @@ footer h2 {
   }
   .icons li {
     width: 100%;
-    background-color: #d9d9d9;
-    padding: 10px 20px;
+    background-color: #e3edf7;
+    padding: 5px 20px;
+    display: flex;
+  }
+  .icons a {
+    background-color: #e3edf7;
+    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.2), -5px -5px 10px -1px rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #0b3a40;
+    padding: 15px 15px;
   }
 
   nav {
