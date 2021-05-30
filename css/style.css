@@ -849,7 +849,7 @@ footer h2 {
   .footer-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
   /* specific-product */
   .pro-display {
