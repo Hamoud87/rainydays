@@ -179,7 +179,10 @@ a {
 
   justify-items: center;
 }
-.featured-products:hover {
+.featured-products:hover,
+.banner:hover,
+.exclusive:hover,
+.winter-sale:hover {
   box-shadow: 5px 5px 5px #bebebe, -10px -10px 40px #ffffff;
   transition: 0.3s;
 }
@@ -322,7 +325,7 @@ footer h2 {
   min-height: 500px;
   font-size: 20px;
   line-height: 50px;
-  margin-bottom: 110px;
+  margin-bottom: 180px;
 }
 
 /* Terms Of Purchase*/
