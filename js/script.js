@@ -41,7 +41,7 @@ function showShopCart(cartItems) {
    
       <div class="pro-list">
       <h5>${cartElement.name}</h5>
-      <img src="${cartElement.image}"  class="cart-image" "alt="${cartElement.alt}"  />
+      <a href="specific-product.html"><img src="${cartElement.image}"  class="cart-image" "alt="${cartElement.alt}" /></a>
       </div>
      
       `;

@@ -277,7 +277,7 @@ footer h2 {
 
 .pro-display {
   display: flex;
-  margin: 20px auto;
+  margin: 20px auto 120px;
   padding: 10px;
 }
 .pro-display > * {
