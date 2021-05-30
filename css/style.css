@@ -1,6 +1,9 @@
 body {
   margin: 0%;
 }
+main {
+  margin-bottom: 100px;
+}
 
 header {
   text-align: center;
@@ -603,6 +606,9 @@ footer h2 {
     font-size: 20px;
     padding: 20px;
   }
+  main {
+    margin-bottom: 5px;
+  }
   .section-featured {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -792,6 +798,9 @@ footer h2 {
     box-shadow: 2px 2px #81f8b8;
     font-size: 20px;
     padding: 20px;
+  }
+  main {
+    margin-bottom: 0px;
   }
   .section-featured,
   .section-men,
