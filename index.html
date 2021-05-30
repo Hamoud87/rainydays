@@ -7,22 +7,6 @@
     <title>Rainydays Home</title>
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
-    <!-- Hotjar Tracking Code for https://rainydays-mohammed.netlify.app -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2415830, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
   </head>
   <body>
     <header class="top-header">
@@ -41,6 +25,11 @@
           <a href="shopping-cart.html"><i class="fas fa-1.5x fa-shopping-cart"></i> </a>
         </li>
       </ul>
+      <ul class="search-bar">
+        <li>
+          <i class="fas fa-1x fa-search"></i>
+        </li>
+      </ul>
       <label class="hamburger-label" class="hamburger-label" for="hamburger-menu"><i class="fas fa-2x fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu" />
       <nav>
@@ -56,107 +45,30 @@
       </nav>
     </header>
     <main>
-      <a href="men.html"><img src="images/banner-1.jpg" class="banner" alt="" /></a>
-
-      <section class="section-featured">
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image1.jpg" class="image1" alt="a product image of a women wearing a yellow rain jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
+      <div class="shop-cart">
+        <div class="pro-list"></div>
+        <div class="total">Total:</div>
+        <a href="shopping-cart.html" class="cta-button cta-add-to-cart">Checkout</a>
+      </div>
+      <a href="men.html">
+        <div class="banner">
+          <p>Summer session</p>
         </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image8.jpg" class="image1" alt=" a product image of a man wearing a yellow rainy jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
+      </a>
+      <section class="section-featured"></section>
+      <section class="advert">
+        <a href="women.html">
+          <div class="advert-element winter-sale">
+            <p>Winter sale</p>
           </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image15.jpg" class="image1" alt="a product image of man wearig a long dark green rain jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
+        </a>
+        <a href="men.html">
+          <div class="advert-element exclusive">
+            <p>Exclusive</p>
           </div>
-        </div>
-
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image4.jpg" class="image1" alt="a product image from behind of a man wearing a green rain jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image22.jpg" class="image1" alt="a product image of a man wearing a lightred rain jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image6.jpg" class="image1" alt="a product image of a man wear a grey ski jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image1.jpg" class="image1" alt="a proudct image of a women wearing a yellow jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image16.jpg" class="image1" alt="a product image of a young girl weaing a deepblue jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image17.jpg" class="image1" alt="a product image of a lady wearing a light green jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image18.jpg" class="image1" alt="a product image of a lady wearing a red ski jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image19.jpg" class="image1" alt="a product image of a lady wearing a yellow jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
-        <div class="featured-products">
-          <a href="specific-product.html"><img src="images/product-image7.jpg" class="image1" alt="a product image of a lady wearing a dark blue rain jacket" /></a>
-          <div class="featured-products-detail">
-            <h2>Rainydays</h2>
-            <p>699kr</p>
-            <p>Wind Jackets-Navy/blue</p>
-          </div>
-        </div>
+        </a>
       </section>
+
       <div class="company-offers">
         <p>Safe payment</p>
         <p>Fast delivery</p>
@@ -192,5 +104,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>

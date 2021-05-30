@@ -28,6 +28,15 @@ header {
   padding: 15px 15px;
 }
 
+.search-bar {
+  position: absolute;
+  top: 10px;
+  right: 230px;
+  margin: 10px 10px;
+  list-style-type: none;
+  color: #0b3a40;
+}
+
 nav li {
   display: inline-block;
   font-size: 30px;
@@ -53,6 +62,23 @@ nav a:hover,
 .hamburger-label {
   display: none;
 }
+.shop-cart {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 10px;
+  max-width: 500px;
+  min-width: 150px;
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 1000;
+}
+.cart-image {
+  max-width: 40px;
+  border-radius: 5px;
+}
 
 h1 {
   font-family: Helvetica, sans-serif;
@@ -64,8 +90,9 @@ h2 {
   font-size: 20px;
 }
 
-.welcome {
-  background-image: url("../images/banner-1.jpg");
+.banner,
+.exclusive,
+.winter-sale {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -75,6 +102,40 @@ h2 {
 }
 .banner {
   width: 100%;
+  background-image: url("../images/banner.jpg");
+}
+.advert {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.advert-element,
+.banner {
+  display: flex;
+  max-width: 100%;
+  min-height: 250px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px;
+}
+.advert-element p,
+.banner p {
+  background-color: rgb(255, 255, 255, 0.6);
+  padding: 20px 100px;
+  border-radius: 5px;
+}
+.advert a,
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.winter-sale {
+  background-image: url("../images/winter-sale.jpg");
+}
+.exclusive {
+  background-image: url("../images/exclusive.jpg");
 }
 
 .cta-button {
@@ -89,9 +150,21 @@ h2 {
 }
 
 .cta-add-to-cart {
+  float: right;
   background-color: #0b3a40;
   text-align: center;
   margin: 10px;
+}
+
+.cta-buy {
+  background-color: #0b3a40;
+  color: white;
+  border-radius: 30px;
+  width: 70px;
+  min-height: 30px;
+  position: relative;
+  top: 20px;
+  right: 30px;
 }
 
 .section-featured,
@@ -131,6 +204,7 @@ h2 {
 p {
   margin: 0px 0px 0px 0px;
 }
+
 .company-offers {
   display: flex;
   margin: 5px;
@@ -269,8 +343,8 @@ footer h2 {
   max-width: 100%;
 }
 .contact-decoration {
-  margin: 30px auto;
-  padding: 10px 50px;
+  margin: 10% auto;
+  padding: 20px 50px;
   box-shadow: 0px 1px 1px 1px #81f8b8;
   border-radius: 5px;
   text-align: center;
@@ -282,6 +356,21 @@ footer h2 {
 }
 .map-image {
   max-width: 300px;
+}
+
+.validation-error {
+  display: none;
+  color: red;
+  text-align: center;
+}
+#success {
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin: 0px auto;
+  padding: 5px;
+  color: green;
+  font-size: 20px;
 }
 
 /* Men Page*/
@@ -300,6 +389,7 @@ footer h2 {
 
 .shoppingcart-style {
   display: flex;
+  margin-bottom: 15%;
 }
 .shoppingcart-sec-decoration {
   max-width: 100%;
@@ -310,13 +400,12 @@ footer h2 {
 }
 .shoppingcart-elements {
   display: flex;
+  flex-direction: column;
 }
-.shoppingcart-elements div {
-  margin: 10px 20px 0px 10px;
-}
-
-.remove-icon {
-  padding: 10px 0px;
+.cart-thumbnail {
+  max-width: 150px;
+  border-radius: 5px;
+  margin: 10px 100px;
 }
 .shoppingcart-shipment-elements {
   margin: 30px 0px;
@@ -330,7 +419,7 @@ footer h2 {
 .delivery {
   display: flex;
   max-width: 1280px;
-  margin: 10px auto;
+  margin: 10px auto 12%;
 }
 .delivery-section {
   max-width: 400px;
@@ -459,11 +548,12 @@ footer h2 {
   .icons {
     border-radius: 30px;
     position: fixed;
-    top: 88%;
+    top: 90%;
     right: 0%;
     justify-content: center;
     margin: 0px auto;
     width: 100%;
+    z-index: 1000;
   }
   .icons li {
     width: 100%;
@@ -481,6 +571,11 @@ footer h2 {
     text-decoration: none;
     color: #0b3a40;
     padding: 15px 15px;
+  }
+  .search-bar {
+    position: absolute;
+    top: 10px;
+    right: 10%;
   }
 
   nav {
@@ -605,6 +700,7 @@ footer h2 {
     text-align: center;
     justify-content: space-around;
   }
+
   nav {
     display: none;
   }
@@ -632,6 +728,7 @@ footer h2 {
     justify-content: center;
     margin: 0px auto;
     width: 100%;
+    z-index: 1000;
   }
   .icons li {
     width: 100%;
@@ -651,7 +748,22 @@ footer h2 {
     color: #0b3a40;
     padding: 15px 15px;
   }
+  .search-bar {
+    position: absolute;
+    top: 10px;
+    right: 15%;
+    margin: 10px 10px;
+    list-style-type: none;
+    color: #0b3a40;
+  }
 
+  .cta-buy {
+    width: 50px;
+    min-height: 20px;
+    position: relative;
+    top: 6px;
+    right: 20px;
+  }
   nav {
     display: none;
     position: fixed;
@@ -706,7 +818,9 @@ footer h2 {
     height: 200px;
     border-radius: 10px 10px 0px 0px;
   }
-
+  .advert {
+    display: block;
+  }
   .company-offers {
     display: none;
   }
