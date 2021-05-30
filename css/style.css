@@ -860,7 +860,7 @@ footer h2 {
   .shoppingcart-style {
     display: block;
 
-    margin-bottom: 25%;
+    margin-bottom: 20%;
   }
   .shoppingcart-style h1 {
     text-align: center;
@@ -881,6 +881,7 @@ footer h2 {
   /* Delivery-Payment */
   .delivery {
     display: block;
+    margin-bottom: 20%;
   }
   .delivery-section textarea {
     width: 300px;
