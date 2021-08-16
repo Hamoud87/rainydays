@@ -4,7 +4,7 @@ const totalContainer = document.querySelector(".total");
 let total = 0;
 cartItems.forEach(function (cartElement) {
   total += cartElement.price;
-  cartContainer.innerHTML += `
+  cartContainer.innerHTML = `
 
     <div class="pro-list">
     <h5>${cartElement.name}</h5>
