@@ -3,7 +3,7 @@ const cartContainer = document.querySelector(".shoppingcart-elements");
 const totalContainer = document.querySelector(".total");
 let total = 0;
 cartItems.forEach(function (cartElement) {
-  total = cartElement.price;
+  total += cartElement.price;
   cartContainer.innerHTML += `
 
     <div class="pro-list">
@@ -15,3 +15,6 @@ cartItems.forEach(function (cartElement) {
     `;
 });
 totalContainer.innerHTML = `Total: ${total}`;
+
+
+
