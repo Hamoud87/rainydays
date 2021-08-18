@@ -35,8 +35,9 @@ function showShopCart(cartItems) {
   shopCart.style.display = "block";
   proList.innerHTML = "";
   let total = 0;
+
   cartItems.forEach(function (cartElement) {
-    total = cartElement.price;
+    total += cartElement.price;
     proList.innerHTML += `
    
       <div class="pro-list">
