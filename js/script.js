@@ -37,7 +37,7 @@ function showShopCart(cartItems) {
   let total = 0;
 
   cartItems.forEach(function (cartElement) {
-    total += cartElement.price;
+    total += parseInt(cartElement.price);
     proList.innerHTML += `
    
       <div class="pro-list">

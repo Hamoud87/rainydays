@@ -2,8 +2,7 @@ const cartItems = JSON.parse(localStorage.getItem("proList"));
 const cartContainer = document.querySelector(".shoppingcart-elements");
 const totalContainer = document.querySelector(".total");
 let total = 0;
-
-cartItems.forEach(function (cartElement) {
+let price = cartItems.forEach(function (cartElement) {
   cartContainer.innerHTML = "";
 
   total += parseInt(cartElement.price);
